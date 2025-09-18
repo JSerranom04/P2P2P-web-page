@@ -211,6 +211,13 @@ body {
     box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
 }
 
+.logo-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
 .logo-text {
     font-size: 48px;
     font-weight: bold;
@@ -313,6 +320,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .cta-button::before {
@@ -692,6 +700,35 @@ body {
 
 .skill:hover {
     transform: scale(1.05);
+}
+
+.member-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.member-linkedin,
+.member-email {
+    width: 35px;
+    height: 35px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: var(--transition-medium);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member-linkedin:hover,
+.member-email:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(204, 0, 0, 0.4);
 }
 
 /* ==========================================================================
