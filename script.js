@@ -512,7 +512,7 @@ function injectAdditionalStyles() {
         }
         
         .nav-link.active {
-            color: #f093fb !important;
+            color: #CC0000 !important;
         }
         
         /* Loading animation for initial page load */
@@ -522,7 +522,7 @@ function injectAdditionalStyles() {
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
