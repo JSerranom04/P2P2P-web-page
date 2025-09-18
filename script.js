@@ -513,6 +513,8 @@ function injectAdditionalStyles() {
         
         .nav-link.active {
             color: #CC0000 !important;
+            background: rgba(204, 0, 0, 0.2) !important;
+            border-color: #CC0000 !important;
         }
         
         /* Loading animation for initial page load */
