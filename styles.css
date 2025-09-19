@@ -208,12 +208,8 @@ body {
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
-    background: #990000;
-    backdrop-filter: blur(20px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
+    width: 216px;
+    height: 216px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -224,15 +220,14 @@ body {
 }
 
 .logo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
 .logo-image {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.8));
 }
 
 .logo-text {
@@ -244,14 +239,14 @@ body {
 
 .logo-glow {
     position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    background: conic-gradient(from 0deg, transparent, rgba(204, 0, 0, 0.3), transparent);
     border-radius: 50%;
     animation: rotate 4s linear infinite;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 @keyframes float {
@@ -1024,8 +1019,13 @@ body {
     }
 
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo-image {
+        width: 130px;
+        height: 130px;
     }
 
     .logo-text {
