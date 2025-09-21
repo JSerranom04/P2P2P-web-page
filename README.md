@@ -39,7 +39,7 @@ https://github.com/xyloquack/P2P2P
 **Alejandro Benito** - Backend Developer  
 🔗 LinkedIn: https://www.linkedin.com/in/albenito
 
-*Christian Lamb ** - Backend Developer  
+**Christian Lamb** - Backend Developer  
 📧 Email: cjl525@nau.edu
 🔗 LinkedIn: https://www.linkedin.com/in/christian-lamb-0655a2247
 
