@@ -16,6 +16,7 @@ class P2P2PWebsite {
         this.setupHoverEffects();
         this.setupMobileMenu();
         this.setupLazyLoading();
+        this.setupTabs();
     }
 
     // ==========================================================================
@@ -108,9 +109,8 @@ class P2P2PWebsite {
     // ==========================================================================
     setupNavigation() {
         const nav = document.querySelector('.nav');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        // Scroll effect for navigation
+        // Remover el código de smooth scrolling
+        // Mantener solo el efecto de scrolled
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
                 nav.classList.add('scrolled');
@@ -118,26 +118,9 @@ class P2P2PWebsite {
                 nav.classList.remove('scrolled');
             }
         });
-
-        // Smooth scrolling for navigation links
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    const offsetTop = targetElement.offsetTop - 80;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Active link highlighting
-        this.setupActiveLinks();
+        
+        // Los nav-link ahora son botones que usan el mismo sistema de tabs
+        // No need for additional code here
     }
 
     setupActiveLinks() {
@@ -393,6 +376,45 @@ class P2P2PWebsite {
             link.as = 'style';
             link.href = url;
             document.head.appendChild(link);
+        });
+    }
+
+    // ==========================================================================
+    // Tab System - SIMPLIFICADO AL MÁXIMO
+    // ==========================================================================
+    setupTabs() {
+        const buttons = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const target = this.getAttribute('data-tab');
+                
+                // Quitar active de todo
+                buttons.forEach(b => b.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+                
+                // Añadir active al clickeado
+                this.classList.add('active');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    }
+    
+    animateTabContent(content) {
+        if (!content) return;
+        
+        // Animate cards and elements within the tab
+        const cards = content.querySelectorAll('.feature-card, .team-member, .contact-item, .tech-item, .timeline-item');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 100);
         });
     }
 
@@ -684,13 +706,29 @@ function setupContactEnhancements() {
 // Initialize Everything
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded - Initializing P2P2P Website');
+    
     injectAdditionalStyles();
     setupPageLoader();
     setupEasterEggs();
     setupContactEnhancements();
     
     // Initialize main website functionality
-    new P2P2PWebsite();
+    const website = new P2P2PWebsite();
+    
+    // Additional debugging
+    setTimeout(() => {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        console.log('Final check - Tab buttons:', tabButtons.length);
+        console.log('Final check - Tab contents:', tabContents.length);
+        
+        // Manually test first button
+        if (tabButtons.length > 0) {
+            console.log('First button data-tab:', tabButtons[0].getAttribute('data-tab'));
+            console.log('First button classes:', tabButtons[0].className);
+        }
+    }, 1000);
     
     // Log a welcome message
     console.log('🚀 P2P2P Project website loaded successfully!');

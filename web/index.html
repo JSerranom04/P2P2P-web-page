@@ -19,13 +19,13 @@
         <div class="nav-container">
             <div class="nav-logo">P2P2P</div>
             <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#project-details" class="nav-link">Project</a>
-                <a href="#technologies" class="nav-link">Tech</a>
-                <a href="#schedule" class="nav-link">Schedule</a>
-                <a href="#documents" class="nav-link">Docs</a>
-                <a href="#team" class="nav-link">Team</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="project.html" class="nav-link">Project</a>
+                <a href="tech.html" class="nav-link">Tech</a>
+                <a href="schedule.html" class="nav-link">Schedule</a>
+                <a href="docs.html" class="nav-link">Docs</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -51,18 +51,15 @@
                     <span class="title-cursor">|</span>
                 </h1>
 
-                <div class="construction-badge">
-                    <i class="fas fa-cog"></i>
-                    <span>Under Construction</span>
-                    <div class="badge-glow"></div>
-                </div>
-
-                <p class="project-subtitle typing-text">Pluscal to PlantUML to PDF</p>
+                <p class="project-subtitle typing-text">PlusCal to PlantUML to PDF</p>
                 
                 <!-- Sponsor Information -->
                 <div class="sponsor-info">
-                    <p><strong>Sponsor:</strong> Chris Ortiz, Senior Technologist, SanDisk</p>
-                    <p><strong>University Supervisor:</strong> Ogonna, Northern Arizona University</p>
+                    <p><strong>Industry Sponsor:</strong> Chris Ortiz, Senior Technologist, SanDisk Corporation<br></p>
+                    <p> </p>
+                    <p><strong>Industry Sponsor:</strong> Rex Jackson, Senior Technologist, SanDisk Corporation<br></p>
+                    <p> </p>
+                    <p><strong>University Supervisor:</strong> Ogonna, Northern Arizona University<br></p>
                 </div>
                 
                 <a href="https://github.com/xyloquack/P2P2P" target="_blank" class="cta-button">
@@ -72,128 +69,185 @@
             </div>
         </section>
 
-        <!-- Project Details Section -->
-        <section class="project-details" id="project-details">
-            <div class="main-content">
-                <h2 class="section-title">
-                    <i class="fas fa-cogs"></i>
-                    Project Details
-                </h2>
-                <div class="project-description">
-                    <h3>Project Overview</h3>
-                    <p>What do we do and what is our objective</p>
-                    
-                    <h3>High-Level Requirements</h3>
-                    <ul>
-                        <li>Put something here</li>
-                        <li>Put something here</li>
-                        <li>Put something here</li>
-                    </ul>
-                    
-                    <h3>Envisioned Solution</h3>
-                    <p>We're building a <strong>translation from pluscal to plantuml to pdf</strong> with:</p>
-                    <ul>
-                        <li>Put something here</li>
-                        <li>Put something here</li>
-                        <li>Put something here</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technologies Section -->
-        <section class="technologies" id="technologies">
-            <div class="main-content">
-                <h2 class="section-title">
-                    <i class="fas fa-tools"></i>
-                    Technologies Used
-                </h2>
-                <div class="tech-list">
-                    <div class="tech-item">
-                        <strong>TLA+:</strong> Mathematical specification language for concurrent and distributed systems
-                    </div>
-                    <div class="tech-item">
-                        <strong>PlusCal:</strong> Higher-level language that compiles to TLA+ for easier specification writing
-                    </div>
-                    <div class="tech-item">
-                        <strong>PlantUML:</strong> Diagram generation from formal specifications
-                    </div>
-                    <div class="tech-item">
-                        <strong>Git & GitHub:</strong> Version control and collaboration platform
-                    </div>
-                    <div class="tech-item">
-                        <strong>Other things..:</strong> Put something here
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Schedule Section -->
-        <section class="schedule" id="schedule">
-            <div class="main-content">
-                <h2 class="section-title">
-                    <i class="fas fa-calendar-alt"></i>
-                    Project Schedule
-                </h2>
-                <div class="timeline">
-                    <div class="timeline-item completed">
-                        <strong>September 2025:</strong> Project initiation and team formation
-                    </div>
-                    <div class="timeline-item current">
-                        <strong>October 2025:</strong> Put something here (Current)
-                    </div>
-                    <div class="timeline-item">
-                        <strong>November 2025:</strong> Put something here
-                    </div>
-                    <div class="timeline-item">
-                        <strong>December 2025 - February 2026:</strong> Put something here
-                    </div>
-                    <div class="timeline-item">
-                        <strong>Other dates:</strong> Put something here
-                    </div>
-                    <div class="timeline-item">
-                        <strong>Other dates:</strong> Put something here
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Documents Section -->
-        <section class="documents" id="documents">
-            <div class="main-content">
-                <h2 class="section-title">
-                    <i class="fas fa-file-alt"></i>
-                    Project Documents
-                </h2>
-                <div class="doc-categories">
-                    <div class="doc-category">
-                        <h3>Put something here</h3>
+        <!-- Tab Content Container -->
+        <div class="tab-content-container">
+            <!-- Overview Tab -->
+            <div class="tab-content active" id="overview">
+                <div class="main-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-info-circle"></i>
+                        Project Overview
+                    </h2>
+                    <div class="project-description">
+                        <h3>Mission Statement</h3>
+                        <p>Automating the generation of visual diagrams from formal specifications to bridge the gap between formal verification and stakeholder communication at SanDisk Corporation.</p>
+                        
+                        <h3>The Challenge</h3>
+                        <p>SanDisk has launched an initiative to write designs using TLA+ (Temporal Logic of Actions) for formal verification. However, design artifacts need to be shared between teams who are more comfortable with visual formats like flowcharts and UML diagrams rather than pseudo code.</p>
+                        
+                        <h3>Our Solution</h3>
+                        <p>We're developing an automated pipeline that:</p>
                         <ul>
-                            <li><a href="https://github.com/xyloquack/P2P2P" target="_blank">Put something here</a></li>
-                            <li><a href="https://github.com/xyloquack/P2P2P" target="_blank">Put something here</a></li>
+                            <li>Takes PlusCal pseudo code as input</li>
+                            <li>Generates PlantUML sequence and activity diagrams</li>
+                            <li>Produces locked PDFs only when the PlusCal passes model-checking</li>
+                            <li>Ensures synchronization between PlusCal and PlantUML contexts</li>
                         </ul>
-                    </div>
-                    <div class="doc-category">
-                        <h3>Put something here</h3>
+                        
+                        <h3>Impact</h3>
+                        <p>This breakthrough will benefit SanDisk in three important ways:</p>
                         <ul>
-                            <li>Put something here</li>
-                            <li>Put something here</li>
-                            <li>Put something here</li>
-                        </ul>
-                    </div>
-                    <div class="doc-category">
-                        <h3>Put something here</h3>
-                        <ul>
-                            <li><a href="https://github.com/xyloquack/P2P2P" target="_blank">Put something here</a></li>
-                            <li>Put something here</li>
+                            <li><strong>Time Reduction:</strong> Significantly reduce time required to create formally verified visual figures</li>
+                            <li><strong>Adoption Encouragement:</strong> Help firmware engineers adopt PlusCal as a stepping-stone to TLA+</li>
+                            <li><strong>Culture Change:</strong> Foster a culture of formal methods adoption within SanDisk's design process</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Project Details Tab -->
+            <div class="tab-content" id="project">
+                <div class="main-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-cogs"></i>
+                        Project Details
+                    </h2>
+                    <div class="project-description">
+                        <h3>Background</h3>
+                        <p>SanDisk is serious about the quality of their popular storage products and strives to be best-in-class in upholding their global brand. The company has moved toward formal verification using TLA+ to catch subtle bugs that traditional review processes miss.</p>
+                        
+                        <h3>Technical Requirements</h3>
+                        <ul>
+                            <li>Parse and analyze PlusCal pseudo code specifications</li>
+                            <li>Generate PlantUML sequence diagrams from PlusCal algorithms</li>
+                            <li>Generate PlantUML activity diagrams showing system flow</li>
+                            <li>Integrate with TLA+ model checker for verification</li>
+                            <li>Produce locked PDF documents with LaTeX formatting</li>
+                            <li>Ensure synchronization between PlusCal source and generated diagrams</li>
+                        </ul>
+                        
+                        <h3>Deliverables</h3>
+                        <ul>
+                            <li>Complete and well-commented codebase</li>
+                            <li>Detailed documentation and reference manual</li>
+                            <li>GitHub repository with development history</li>
+                            <li>Professional literature for SanDisk product teams</li>
+                        </ul>
+                        
+                        <h3>Academic Significance</h3>
+                        <p>This project exposes students to cutting-edge formal methods invented by Leslie Lamport (ACM Turing Award winner), used by major companies like AWS, Microsoft, Oracle, Google, LinkedIn, MongoDB, and others. There's potential for grant funding from the TLA+ Foundation.</p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Team Section -->
-        <section class="team-section" id="team">
+            <!-- Technologies Tab -->
+            <div class="tab-content" id="tech">
+                <div class="main-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-tools"></i>
+                        Technologies & Tools
+                    </h2>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <strong>TLA+ (Temporal Logic of Actions):</strong> Mathematical specification language for concurrent and distributed systems, invented by Leslie Lamport
+                        </div>
+                        <div class="tech-item">
+                            <strong>PlusCal:</strong> Higher-level pseudo code language that compiles to TLA+, more approachable for firmware engineers
+                        </div>
+                        <div class="tech-item">
+                            <strong>PlantUML:</strong> Tool for generating UML sequence diagrams, activity diagrams, and flowcharts from textual descriptions
+                        </div>
+                        <div class="tech-item">
+                            <strong>LaTeX & LuaLaTeX:</strong> Document preparation system for high-quality typesetting and PDF generation
+                        </div>
+                        <div class="tech-item">
+                            <strong>Rust (Preferred) or Python:</strong> Primary programming languages for implementation
+                        </div>
+                        <div class="tech-item">
+                            <strong>VSCode Extensions:</strong> TLA+ extension, LaTeX Workshop, Rust-analyzer, PlantUML, Graphviz Interactive Preview
+                        </div>
+                        <div class="tech-item">
+                            <strong>Supporting Tools:</strong> OpenJDK ≥11.0.6, MiKTeX ≥25.3, Adobe Acrobat Reader, Git & GitHub
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Tab -->
+            <div class="tab-content" id="schedule">
+                <div class="main-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        Project Timeline
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <strong>September 2025:</strong> something...
+                        </div>
+                        <div class="timeline-item current">
+                            <strong>October 2025:</strong> something...
+                        </div>
+                        <div class="timeline-item">
+                            <strong>November 2025:</strong> something...
+                        </div>
+                        <div class="timeline-item">
+                            <strong>December 2025:</strong> something...
+                        </div>
+                        <div class="timeline-item">
+                            <strong>January 2026:</strong> something...
+                        </div>
+                        <div class="timeline-item">
+                            <strong>February 2026:</strong> something...
+                        </div>
+                        <div class="timeline-item">
+                            <strong>March 2026:</strong> something...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents Tab -->
+            <div class="tab-content" id="docs">
+                <div class="main-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-file-alt"></i>
+                        Project Documentation
+                    </h2>
+                    <div class="doc-categories">
+                        <div class="doc-category">
+                            <h3>Development Resources</h3>
+                            <ul>
+                                <li><a href="https://github.com/xyloquack/P2P2P" target="_blank">GitHub Repository</a></li>
+                                <li><a href="https://lamport.azurewebsites.net/tla/tla.html" target="_blank">TLA+ Official Homepage</a></li>
+                                <li><a href="https://github.com/tlaplus" target="_blank">TLA+ GitHub Organization</a></li>
+                                <li><a href="https://plantuml.com/" target="_blank">PlantUML Documentation</a></li>
+                            </ul>
+                        </div>
+                        <div class="doc-category">
+                            <h3>Academic Resources</h3>
+                            <ul>
+                                <li>Project Specification Document</li>
+                                <li>Requirements Analysis Report</li>
+                                <li>Architecture Design Document</li>
+                                <li>Progress Reports (Monthly)</li>
+                            </ul>
+                        </div>
+                        <div class="doc-category">
+                            <h3>External Links</h3>
+                            <ul>
+                                <li><a href="https://conf.tlapl.us/home/" target="_blank">TLA+ Conferences</a></li>
+                                <li><a href="https://foundation.tlapl.us/" target="_blank">TLA+ Foundation</a></li>
+                                <li><a href="https://www.latex-project.org/" target="_blank">LaTeX Project</a></li>
+                                <li><a href="https://www.rust-lang.org/" target="_blank">Rust Programming Language</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Tab -->
+            <div class="tab-content" id="team">
+                <div class="team-section">
             <h3 class="section-title">
                 <i class="fas fa-users"></i>
                 Meet Our Team
@@ -316,79 +370,70 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        
-        <!-- Main Content -->
-        <main class="main-content">
-
-            <!-- Interactive Progress Bar -->
-            <div class="progress-section">
-                <div class="progress-label">
-                    <span>Project Progress</span>
-                    <span class="progress-percentage">15%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill"></div>
-                    <div class="progress-sparkle"></div>
                 </div>
             </div>
-
-            <!-- Features Preview -->
-            <div class="features-preview">
-                <h3 class="section-title">
-                    <i class="fas fa-star"></i>
-                    Coming Soon
-                </h3>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
+            
+            <!-- Contact Tab -->
+            <div class="tab-content" id="contact">
+                <div class="main-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Primary Contact</span>
+                                <span class="contact-value">jsb536@nau.edu</span>
+                            </div>
                         </div>
-                        <h4>AI Integration</h4>
-                        <p>Cutting-edge artificial intelligence</p>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">University</span>
+                                <span class="contact-value">Northern Arizona University</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Semester</span>
+                                <span class="contact-value">Fall 2025 - Spring 2026</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Industry Partner</span>
+                                <span class="contact-value">SanDisk Corporation</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-            <h3 class="section-title">
-                Get In Touch
-            </h3>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                    
+                    <!-- Progress Section -->
+                    <div class="progress-section">
+                        <div class="progress-label">
+                            <span>Project Progress</span>
+                            <span class="progress-percentage">15%</span>
                         </div>
-                        <div class="contact-details">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">jsb536@nau.edu</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div class="contact-details">
-                            <span class="contact-label">University</span>
-                            <span class="contact-value">Northern Arizona University</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-calendar"></i>
-                        </div>
-                        <div class="contact-details">
-                            <span class="contact-label">Semester</span>
-                            <span class="contact-value">Fall 2025</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                            <div class="progress-sparkle"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
 
         <!-- Footer -->
         <footer class="footer">
