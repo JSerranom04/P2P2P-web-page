@@ -24,7 +24,6 @@
                 <a href="tech.html" class="nav-link">Tech</a>
                 <a href="schedule.html" class="nav-link">Schedule</a>
                 <a href="docs.html" class="nav-link">Docs</a>
-                <a href="team.html" class="nav-link">Team</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="mobile-menu">
@@ -37,7 +36,7 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <section class="hero" id="home">
+        <section class="hero" id="home" style="margin-bottom: 40px;">
             <div class="hero-content">
                 <div class="logo-container">
                     <div class="logo">
@@ -52,59 +51,122 @@
                 </h1>
 
                 <p class="project-subtitle typing-text">PlusCal to PlantUML to PDF</p>
-                
-                <!-- Sponsor Information -->
-                <div class="sponsor-info">
-                    <p><strong>Industry Sponsor:</strong> Chris Ortiz, Senior Technologist, SanDisk Corporation<br></p>
-                    <p> </p>
-                    <p><strong>Industry Sponsor:</strong> Rex Jackson, Senior Technologist, SanDisk Corporation<br></p>
-                    <p> </p>
-                    <p><strong>University Supervisor:</strong> Ogonna, Northern Arizona University<br></p>
-                </div>
-                
-                <a href="https://github.com/xyloquack/P2P2P" target="_blank" class="cta-button">
+
+                <a href="project.html" class="cta-button">
                     <span>Explore Project</span>
                     <i class="fas fa-rocket"></i>
                 </a>
             </div>
+                
         </section>
 
-        <!-- Tab Content Container -->
-        <div class="tab-content-container">
-            <!-- Overview Tab -->
-            <div class="tab-content active" id="overview">
-                <div class="main-content">
-                    <h2 class="section-title">
-                        <i class="fas fa-info-circle"></i>
-                        Project Overview
-                    </h2>
-                    <div class="project-description">
-                        <h3>Mission Statement</h3>
-                        <p>Automating the generation of visual diagrams from formal specifications to bridge the gap between formal verification and stakeholder communication at SanDisk Corporation.</p>
-                        
-                        <h3>The Challenge</h3>
-                        <p>SanDisk has launched an initiative to write designs using TLA+ (Temporal Logic of Actions) for formal verification. However, design artifacts need to be shared between teams who are more comfortable with visual formats like flowcharts and UML diagrams rather than pseudo code.</p>
-                        
-                        <h3>Our Solution</h3>
-                        <p>We're developing an automated pipeline that:</p>
-                        <ul>
-                            <li>Takes PlusCal pseudo code as input</li>
-                            <li>Generates PlantUML sequence and activity diagrams</li>
-                            <li>Produces locked PDFs only when the PlusCal passes model-checking</li>
-                            <li>Ensures synchronization between PlusCal and PlantUML contexts</li>
-                        </ul>
-                        
-                        <h3>Impact</h3>
-                        <p>This breakthrough will benefit SanDisk in three important ways:</p>
-                        <ul>
-                            <li><strong>Time Reduction:</strong> Significantly reduce time required to create formally verified visual figures</li>
-                            <li><strong>Adoption Encouragement:</strong> Help firmware engineers adopt PlusCal as a stepping-stone to TLA+</li>
-                            <li><strong>Culture Change:</strong> Foster a culture of formal methods adoption within SanDisk's design process</li>
-                        </ul>
+        <div class="team-section">
+            <h3 class="section-title">Meet The Sponsors</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/sand-disk.png" alt="Juan José Serrano" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Chris Ortiz</div>
+                        <div class="member-role">Industry Sponsor</div>
+                        <div class="member-skills">
+                            <span class="skill">Senior Technologist</span>
+                            <span class="skill">SanDisk Corporation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/sand-disk.png" alt="Alejandro Benito" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Rex Jackson</div>
+                        <div class="member-role">Industry Sponsor</div>
+                        <div class="member-skills">
+                            <span class="skill">Senior Technologist</span>
+                            <span class="skill">SanDisk Corporation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/nau.jpg" alt="Jackson Belzer" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Ogonna</div>
+                        <div class="member-role">University Supervisor</div>
+                        <div class="member-skills">
+                            <span class="skill">Academic Supervision</span>
+                            <span class="skill">Project Guidance</span>
+                            <span class="skill">Northern Arizona University</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+            <h3 class="section-title" style="margin-top: 40px">Meet Our Team</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/juan_jose_serrano.png" alt="Juan José Serrano" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Juan José Serrano Mora</div>
+                        <div class="member-role">Backend Developer & Formal Verification Specialist</div>
+                        <div class="member-skills">
+                            <span class="skill">TLA+ Specification</span>
+                            <span class="skill">Backend Development</span>
+                            <span class="skill">Protocol Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/alejandro_benito.png" alt="Alejandro Benito" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Alejandro Benito</div>
+                        <div class="member-role">Systems Architect & Documentation Lead</div>
+                        <div class="member-skills">
+                            <span class="skill">System Architecture</span>
+                            <span class="skill">Technical Documentation</span>
+                            <span class="skill">LaTeX & PlantUML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/jackson_belzer.png" alt="Jackson Belzer" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Jackson Belzer</div>
+                        <div class="member-role">Implementation Lead & Testing Coordinator</div>
+                        <div class="member-skills">
+                            <span class="skill">Implementation</span>
+                            <span class="skill">Testing & Validation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="./images/christian_lamb.png" alt="Christian Lamb" class="member-photo">
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Christian Lamb</div>
+                        <div class="member-role">Quality Assurance & Integration Specialist</div>
+                        <div class="member-skills">
+                            <span class="skill">Quality Assurance</span>
+                            <span class="skill">System Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Tab Content Container -->
+        <div class="tab-content-container">
             <!-- Project Details Tab -->
             <div class="tab-content" id="project">
                 <div class="main-content">
