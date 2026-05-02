@@ -697,7 +697,7 @@ body {
 .progress-fill {
     height: 100%;
     background: linear-gradient(90deg, #FFFFFF 0%, #CCCCCC 100%);
-    width: 15%;
+    width: 100%;
     border-radius: var(--border-radius-sm);
     animation: progress-pulse 2s ease-in-out infinite;
     position: relative;
@@ -711,7 +711,7 @@ body {
 .progress-sparkle {
     position: absolute;
     top: 0;
-    left: 15%;
+    left: 100%;
     width: 20px;
     height: 8px;
     background: rgba(0, 0, 0, 0.8);

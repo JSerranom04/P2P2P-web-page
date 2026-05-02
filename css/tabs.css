@@ -1,0 +1,155 @@
+/* ==========================================================================
+   P2P2P Project - Tabs & Content Sections
+   ========================================================================== */
+
+.tabs-container {
+    max-width: 1200px;
+    margin: 100px auto 40px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+    min-height: calc(100vh - 200px);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeInScale 0.4s ease-out forwards;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Tab specific styling */
+.content-panel {
+    background: var(--bg-panel);
+    backdrop-filter: blur(20px);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border-accent);
+}
+
+.content-panel h2 {
+    font-size: 2rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-accent);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.content-panel h3 {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin: 30px 0 15px 0;
+}
+
+.content-panel p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.content-panel ul {
+    color: var(--text-muted);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.content-panel li {
+    margin-bottom: 10px;
+}
+
+/* Grid Layouts for Content */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-light);
+    transition: var(--transition-medium);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-strong);
+}
+
+/* Documents Archive Styles */
+.document-list {
+    display: grid;
+    gap: 20px;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-md);
+    border-left: 4px solid var(--border-accent);
+    transition: var(--transition-medium);
+}
+
+.document-item:hover {
+    background: rgba(204, 0, 0, 0.1);
+    transform: translateX(10px);
+}
+
+.doc-icon {
+    font-size: 2rem;
+    color: var(--text-accent);
+    margin-right: 20px;
+}
+
+.doc-info flex-grow {
+    flex-grow: 1;
+}
+
+.doc-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.doc-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.doc-download {
+    color: var(--text-light);
+    background: var(--primary-gradient);
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.doc-download:hover {
+    transform: scale(1.05);
+}

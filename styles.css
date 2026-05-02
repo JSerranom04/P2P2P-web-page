@@ -474,7 +474,7 @@ body {
 .progress-fill {
     height: 100%;
     background: linear-gradient(90deg, #FFFFFF 0%, #CCCCCC 100%);
-    width: 15%;
+    width: 100%;
     border-radius: var(--border-radius-sm);
     animation: progress-pulse 2s ease-in-out infinite;
     position: relative;
@@ -488,7 +488,7 @@ body {
 .progress-sparkle {
     position: absolute;
     top: 0;
-    left: 15%;
+    left: 100%;
     width: 20px;
     height: 8px;
     background: rgba(0, 0, 0, 0.8);
@@ -738,6 +738,7 @@ body {
 }
 
 .member-linkedin,
+.member-github,
 .member-email {
     width: 35px;
     height: 35px;
@@ -754,6 +755,7 @@ body {
 }
 
 .member-linkedin:hover,
+.member-github:hover,
 .member-email:hover {
     transform: translateY(-3px) scale(1.1);
     box-shadow: 0 8px 25px rgba(204, 0, 0, 0.4);
@@ -1036,3 +1038,19 @@ body {
         justify-content: center;
     }
 } 
+/* ==========================================================================
+   Tabs Logic
+   ========================================================================== */
+.tab-section {
+    display: none;
+    animation: fadeInScale 0.4s ease forwards;
+}
+.tab-section.active {
+    display: block;
+}
+.nav-link.active {
+    color: #CC0000;
+    background: rgba(204, 0, 0, 0.1);
+    border-color: #CC0000;
+}
+

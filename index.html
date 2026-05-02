@@ -20,8 +20,11 @@
         <div class="nav-container">
             <div class="nav-logo">P2P2P</div>
             <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#team" class="nav-link">Team</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#team" class="nav-link">Team Details</a>
+                <a href="#requirements" class="nav-link">Requirements</a>
+                <a href="#product" class="nav-link">Product & Tech</a>
+                <a href="#documents" class="nav-link">Documents</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="mobile-menu">
@@ -33,8 +36,12 @@
     </nav>
 
     <div class="container">
-        <!-- Hero Section -->
-        <section class="hero" id="home">
+        <!-- =======================================================
+             HOME TAB (Original Hero & Main Content)
+             ======================================================= -->
+        <div id="home" class="tab-section active">
+            <!-- Hero Section -->
+            <section class="hero">
             <div class="hero-content">
                 <div class="logo-container">
                     <div class="logo">
@@ -46,35 +53,48 @@
                     <span class="title-line">P2P2P Project</span>
                     <span class="title-cursor">|</span>
                 </h1>
-                <p class="project-subtitle typing-text">Innovative Solutions for Tomorrow's Challenges</p>
-                <a href="https://github.com/xyloquack/P2P2P" target="_blank" class="cta-button">
-                    <span>Explore Project</span>
-                    <i class="fas fa-rocket"></i>
-                </a>
+                <p class="project-subtitle typing-text">PlusCal to PlantUML to PDF</p>
+
             </div>
         </section>
 
         <!-- Main Content -->
         <main class="main-content">
-            <div class="construction-badge">
-                <i class="fas fa-cog"></i>
-                <span>Under Construction</span>
-                <div class="badge-glow"></div>
-            </div>
 
-            <h2 class="welcome-message">Welcome to Our Capstone Project!</h2>
-            
-            <p class="description">
-                We're excited to share our journey as we develop the <strong>P2P2P project</strong> - an innovative solution that pushes the boundaries 
-                of technology. This website serves as our professional project documentation platform and will evolve throughout 
-                our Capstone development process. Stay tuned for updates, documentation, and exciting developments!
-            </p>
+
+                <h2 class="welcome-message">Automated Documentation Generation</h2>
+                
+                <p class="description">
+                    Welcome to the official showcase of P2P2P. Our project automates documentation generation directly from formally verified PlusCal specifications. By bridging the gap between mathematical verification and professional diagramming, we eliminate manual errors and save valuable engineering time.
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-building" style="font-size: 2rem; color: var(--primary); margin-bottom: 15px;"></i>
+                        <h4>Project Sponsor</h4>
+                        <p><strong>SanDisk</strong></p>
+                        <p>Chris Ortiz - Senior Technologist, Tools & Infrastructure</p>
+                        <p>Rex Jackson - Vice President, Tools & Infrastructure</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chalkboard-teacher" style="font-size: 2rem; color: var(--primary); margin-bottom: 15px;"></i>
+                        <h4>Technical Advisor</h4>
+                        <p>Ogonna Eli</p>
+                        <p>Faculty Mentor - Northern Arizona University</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users" style="font-size: 2rem; color: var(--primary); margin-bottom: 15px;"></i>
+                        <h4>Team</h4>
+                        <p><strong>Blueprint Jacks</strong></p>
+                        <p>Jackson Belzer, Christian Lamb, Juan José Serrano Mora, Alejandro Benito Marcos</p>
+                    </div>
+                </div>
 
             <!-- Interactive Progress Bar -->
             <div class="progress-section">
                 <div class="progress-label">
                     <span>Project Progress</span>
-                    <span class="progress-percentage">15%</span>
+                    <span class="progress-percentage">100%</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill"></div>
@@ -82,39 +102,32 @@
                 </div>
             </div>
 
-            <!-- Features Preview -->
-            <div class="features-preview">
+
+
+            </div>
+        </div>
+
+        <!-- =======================================================
+             TEAM TAB (Original Team Section)
+             ======================================================= -->
+        <div id="team" class="tab-section">
+            <!-- Team Section -->
+            <section class="team-section">
                 <h3 class="section-title">
-                    <i class="fas fa-star"></i>
-                    Coming Soon
+                    <i class="fas fa-clipboard-list"></i>
+                    The Problem & Solution
                 </h3>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h4>AI Integration</h4>
-                        <p>Cutting-edge artificial intelligence</p>
+                <div class="features-grid" style="margin-bottom: 40px;">
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>The Pains</h4>
+                        <p>Currently, formal methods like TLA+ and PlusCal are powerful but hard to communicate. Engineers write code, stakeholders need visuals, and formal models sit in between. Manual diagram generation is slow, quickly outdated, and error-prone. This creates a risk of hidden errors where documentation doesn't match the verified logic.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>Security First</h4>
-                        <p>Enterprise-grade security measures</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h4>Lightning Fast</h4>
-                        <p>Optimized for maximum performance</p>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>The Gains</h4>
+                        <p>P2P2P provides 100% accurate diagrams consistent with mathematical verification. We save engineers valuable time and effort, ensure determinism (outputs generate in under 60 seconds), and encourage wider adoption of formal methods by making them social and visually accessible.</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Team Section -->
-            <section class="team-section" id="team">
                 <h3 class="section-title">
                     <i class="fas fa-users"></i>
                     Meet Our Team
@@ -127,17 +140,20 @@
                         </div>
                         <div class="member-info">
                             <div class="member-name">Juan José Serrano Mora</div>
-                            <div class="member-role">Backend Developer</div>
+                            <div class="member-role">Architect</div>
                             <div class="member-skills">
                                 <span class="skill">Backend</span>
-                                <span class="skill">APIs</span>
-                                <span class="skill">Databases</span>
+                                <span class="skill">Rust Pipeline</span>
+                                <span class="skill">AST Parsing</span>
                             </div>
                             <div class="member-links">
-                                <a href="https://www.linkedin.com/in/juan-jos%C3%A9-serrano-mora/" target="_blank" class="member-linkedin">
+                                <a href="https://www.linkedin.com/in/juan-jose-serrano-mora/" target="_blank" class="member-linkedin">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="mailto:jserranom04@gmail.com" class="member-email">
+                                <a href="https://github.com/JSerranom04" target="_blank" class="member-github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:js5992@nau.edu" class="member-email">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
@@ -150,15 +166,21 @@
                         </div>
                         <div class="member-info">
                             <div class="member-name">Alejandro Benito</div>
-                            <div class="member-role">Backend Developer</div>
+                            <div class="member-role">Release Manager</div>
                             <div class="member-skills">
-                                <span class="skill">Backend</span>
-                                <span class="skill">APIs</span>
-                                <span class="skill">Databases</span>
+                                <span class="skill">Documentation</span>
+                                <span class="skill">Diagrams</span>
+                                <span class="skill">System Design</span>
                             </div>
                             <div class="member-links">
                                 <a href="https://www.linkedin.com/in/albenito" target="_blank" class="member-linkedin">
                                     <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/Parka1" target="_blank" class="member-github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:ab5637@nau.edu" class="member-email">
+                                    <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
                         </div>
@@ -170,11 +192,22 @@
                         </div>
                         <div class="member-info">
                             <div class="member-name">Jackson Belzer</div>
-                            <div class="member-role">Backend Developer</div>
+                            <div class="member-role">Team Lead</div>
                             <div class="member-skills">
                                 <span class="skill">Backend</span>
-                                <span class="skill">APIs</span>
-                                <span class="skill">Databases</span>
+                                <span class="skill">Rust Pipeline</span>
+                                <span class="skill">AST</span>
+                            </div>
+                            <div class="member-links">
+                                <a href="https://www.linkedin.com/in/jackson-belzer/" target="_blank" class="member-linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/xyloquack" target="_blank" class="member-github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:jsb536@nau.edu" class="member-email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -185,15 +218,18 @@
                         </div>
                         <div class="member-info">
                             <div class="member-name">Christian Lamb</div>
-                            <div class="member-role">Backend Developer</div>
+                            <div class="member-role">Recorder</div>
                             <div class="member-skills">
-                                <span class="skill">Backend</span>
-                                <span class="skill">APIs</span>
-                                <span class="skill">Databases</span>
+                                <span class="skill">VSCode</span>
+                                <span class="skill">TypeScript</span>
+                                <span class="skill">User Workflow</span>
                             </div>
                             <div class="member-links">
                                 <a href="https://www.linkedin.com/in/christian-lamb-0655a2247" target="_blank" class="member-linkedin">
                                     <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/cjl525" target="_blank" class="member-github" style="color: var(--text);">
+                                    <i class="fab fa-github"></i>
                                 </a>
                                 <a href="mailto:cjl525@nau.edu" class="member-email">
                                     <i class="fas fa-envelope"></i>
@@ -216,18 +252,115 @@
                             <div class="member-name">Chris Ortiz</div>
                             <div class="member-role">Supervisor</div>
                             <div class="member-skills">
-                                <span class="skill">Supervisor</span>
-                                <span class="skill">Senior Technologist</span>
-                                <span class="skill">Great supervisor!</span>
+                                <span class="skill">Tools & Infrastructure</span>
+                                <span class="skill">SanDisk</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
+            </section>
+        </div>
 
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
+        <!-- =======================================================
+             REQUIREMENTS TAB
+             ======================================================= -->
+        <div id="requirements" class="tab-section">
+            <main class="main-content">
+                <h2 class="welcome-message">Requirements & Schedule</h2>
+                <div class="features-grid">
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Major Requirements</h4>
+                        <p>Automated diagram generation (Activity, Sequence, State), VSCode integration, Verification-first approach (TLC Enforcement), and Professional PDF output with Hashing/Provenance.</p>
+                    </div>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Milestones</h4>
+                        <p><strong>Alpha Demo I:</strong> Verified Activity Diagram Generation, VSCode Extension, TLC Enforcement.<br>
+                        <strong>Alpha Demo II:</strong> Sequence & State Diagrams, Improved Readability, PDF Verification.<br>
+                        <strong>Acceptance Demo:</strong> Template-driven PDFs, auto descriptions, performance optimizations.</p>
+                    </div>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Status</h4>
+                        <p>All milestones successfully completed and delivered to SanDisk.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- =======================================================
+             PRODUCT & TECH TAB
+             ======================================================= -->
+        <div id="product" class="tab-section">
+            <main class="main-content">
+                <h2 class="welcome-message">The Product</h2>
+                <p class="description" style="text-align:left;"><strong>Value Proposition:</strong> "Making formal methods explainable." Automatically generate trusted, professional documentation directly from verified PlusCal models.</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>Architecture</h4>
+                        <p>Modular monolith utilizing a Pipeline Dependency Model (VSCode -> TLC -> Rust -> PlantUML -> LaTeX).</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Technologies</h4>
+                        <p>VSCode Extension (TypeScript), Rust Backend (Parser/AST), TLA+/TLC Toolchain, PlantUML, LaTeX.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Codebase</h4>
+                        <a href="https://github.com/chris-ortiz-sndk/P2P2P.git" target="_blank" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">View Repository</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- =======================================================
+             DOCUMENTS TAB
+             ======================================================= -->
+        <div id="documents" class="tab-section">
+            <main class="main-content">
+                <h2 class="welcome-message">Document Archive</h2>
+                <div class="features-grid" style="margin-bottom: 20px;">
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Software Design Document</h4>
+                        <p>System blueprints, architecture, component interfaces, and pipeline model details.</p>
+                        <a href="./data/Software Design Document.docx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;" download>Download</a>
+                    </div>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Software Testing Plan</h4>
+                        <p>Unit testing strategy for the Rust backend, integration scenarios, and usability testing.</p>
+                        <a href="./data/Software Testing Plan.docx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;" download>Download</a>
+                    </div>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Final Report</h4>
+                        <p>Comprehensive summary of the P2P2P system, development timeline, and future work.</p>
+                        <a href="./data/Final Report.docx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;" download>Download</a>
+                    </div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>P2P2P User Manual</h4>
+                        <p>Installation guide, configuration settings, and daily operation workflow for engineers.</p>
+                        <a href="./data/P2P2P User Manual.docx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;" download>Download</a>
+                    </div>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Presentations (Alpha & Acceptance)</h4>
+                        <p>Slide decks tracking the project's evolution and milestones demonstrations.</p>
+                        <a href="./data/UGRADS Capstone Presentation.pptx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem; margin-right: 5px;" download>UGRADS</a>
+                        <a href="./data/Acceptance Demo.docx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;" download>Acceptance</a>
+                    </div>
+                    <div class="feature-card" style="text-align:left;">
+                        <h4>Extras</h4>
+                        <p><strong>TLA+ Community Event @ ETAPS 2026:</strong> "Making Formal Methods Explainable" presentation.</p>
+                        <a href="./data/TLA+ Community Event 2026.pptx" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;" download>Download</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- =======================================================
+             CONTACT TAB (Original Contact Section)
+             ======================================================= -->
+        <div id="contact" class="tab-section">
+            <!-- Contact Section -->
+            <section class="contact-section">
             <h3 class="section-title">
                 <i class="fas fa-envelope"></i>
                 Get In Touch
@@ -239,8 +372,8 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">jsb536@nau.edu</span>
+                            <span class="contact-label">Contact Emails</span>
+                            <span class="contact-value">js5992@nau.edu, cjl525@nau.edu,<br>jsb536@nau.edu, ab5637@nau.edu</span>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -252,18 +385,11 @@
                             <span class="contact-value">Northern Arizona University</span>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-calendar"></i>
-                        </div>
-                        <div class="contact-details">
-                            <span class="contact-label">Semester</span>
-                            <span class="contact-value">Fall 2025</span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">

@@ -109,6 +109,7 @@ class P2P2PWebsite {
     setupNavigation() {
         const nav = document.querySelector('.nav');
         const navLinks = document.querySelectorAll('.nav-link');
+        const tabSections = document.querySelectorAll('.tab-section');
 
         // Scroll effect for navigation
         window.addEventListener('scroll', () => {
@@ -119,7 +120,7 @@ class P2P2PWebsite {
             }
         });
 
-        // Smooth scrolling for navigation links
+        // Tab switching for navigation links
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -127,39 +128,32 @@ class P2P2PWebsite {
                 const targetElement = document.getElementById(targetId);
                 
                 if (targetElement) {
-                    const offsetTop = targetElement.offsetTop - 80;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
+                    // Hide all sections
+                    tabSections.forEach(section => section.classList.remove('active'));
+                    // Remove active from all links
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    
+                    // Show target section and set active link
+                    targetElement.classList.add('active');
+                    link.classList.add('active');
+                    
+                    // Update URL hash without jumping
+                    history.pushState(null, null, `#${targetId}`);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             });
         });
 
-        // Active link highlighting
-        this.setupActiveLinks();
+        // Handle initial load based on hash
+        const initialHash = window.location.hash.substring(1);
+        if (initialHash && document.getElementById(initialHash)) {
+            const initialLink = document.querySelector(`.nav-link[href="#${initialHash}"]`);
+            if (initialLink) initialLink.click();
+        }
     }
 
     setupActiveLinks() {
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
+        // Obsolete with tabs, leaving empty to avoid breaking calls
     }
 
     // ==========================================================================
@@ -290,7 +284,7 @@ class P2P2PWebsite {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        this.animateProgress(progressFill, progressPercentage, 15);
+                        this.animateProgress(progressFill, progressPercentage, 100);
                         observer.unobserve(entry.target);
                     }
                 });

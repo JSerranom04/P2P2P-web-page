@@ -1,0 +1,37 @@
+/* ==========================================================================
+   P2P2P Project - Design Tokens & Variables
+   ========================================================================== */
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #CC0000 0%, #990000 100%);
+    --secondary-gradient: linear-gradient(135deg, #990000 0%, #000000 100%);
+    --accent-gradient: linear-gradient(135deg, #CC0000 0%, #000000 100%);
+    --dark-gradient: linear-gradient(135deg, #000000 0%, #1A1A1A 100%);
+    
+    --text-light: rgba(255, 255, 255, 1);
+    --text-dark: #FFFFFF;
+    --text-muted: #CCCCCC;
+    --text-accent: #CC0000;
+    
+    --bg-dark: #000000;
+    --bg-panel: rgba(0, 0, 0, 0.8);
+    --bg-card: rgba(26, 26, 26, 0.9);
+    
+    --border-accent: #CC0000;
+    --border-light: rgba(255, 255, 255, 0.2);
+    
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 20px 60px rgba(0, 0, 0, 0.4);
+    --shadow-strong: 0 30px 80px rgba(204, 0, 0, 0.3);
+    
+    --border-radius-sm: 8px;
+    --border-radius-md: 15px;
+    --border-radius-lg: 20px;
+    --border-radius-xl: 30px;
+    
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    --font-primary: 'Inter', sans-serif;
+}

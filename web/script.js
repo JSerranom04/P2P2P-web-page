@@ -273,7 +273,7 @@ class P2P2PWebsite {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        this.animateProgress(progressFill, progressPercentage, 15);
+                        this.animateProgress(progressFill, progressPercentage, 100);
                         observer.unobserve(entry.target);
                     }
                 });
