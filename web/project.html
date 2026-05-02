@@ -51,31 +51,78 @@
                 <h3>Academic Significance</h3>
                 <p>This project exposes students to cutting-edge formal methods invented by Leslie Lamport (ACM Turing Award winner), used by major companies like AWS, Microsoft, Oracle, Google, LinkedIn, MongoDB, and others.</p>
             </div>
-            <div class="video" style="margin-top: 30px;">
-                <h3>Project Pitch</h3>
-                <video controls width="100%" style="max-width: 800px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                    <source src="videos/project_pitch.mp4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-                <div style="margin-top: 10px;">
-                    <a href="videos/project_pitch.mp4" download="project_pitch.mp4" class="cta-button" style="padding: 8px 16px; font-size: 0.8rem;">
-                            <span>Download Pitch</span>
-                            <i class="fas fa-download"></i>
-                    </a>
+            <div class="product-showcase" style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+                <h2 class="section-title">The Product</h2>
+                <div class="value-prop" style="background: rgba(204, 0, 0, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #CC0000; margin-bottom: 30px;">
+                    <h3 style="margin-top: 0;">Value Proposition</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">"Making formal methods explainable." P2P2P automates the generation of trusted, professional documentation directly from verified PlusCal models, bridging the gap between rigorous formal verification and clear stakeholder communication.</p>
                 </div>
-            </div>
 
-            <div class="video" style="margin-top: 50px;">
-                <h3>Final UGRADS Presentation</h3>
-                <video controls width="100%" style="max-width: 800px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                    <source src="videos/P2P2P_Final_Video.mp4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-                <div style="margin-top: 10px;">
-                    <a href="videos/P2P2P_Final_Video.mp4" download="P2P2P_Final_Video.mp4" class="cta-button" style="padding: 8px 16px; font-size: 0.8rem;">
-                            <span>Download Final Video</span>
-                            <i class="fas fa-download"></i>
-                    </a>
+                <h3>System Architecture</h3>
+                <p>Our solution implements a high-performance, modular pipeline designed for the SanDisk firmware development ecosystem:</p>
+                <div class="architecture-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                        <strong style="color: #CC0000;">1. VSCode Extension</strong>
+                        <p style="font-size: 0.9rem;">The primary interface for engineers, handling real-time syntax highlighting and triggering the pipeline.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                        <strong style="color: #CC0000;">2. Rust-based Parser</strong>
+                        <p style="font-size: 0.9rem;">Translates PlusCal AST into internal models and prepares textual PlantUML descriptions.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                        <strong style="color: #CC0000;">3. PlantUML Engine</strong>
+                        <p style="font-size: 0.9rem;">Generates high-fidelity sequence and activity diagrams from the translated models.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                        <strong style="color: #CC0000;">4. LaTeX/PDF Toolchain</strong>
+                        <p style="font-size: 0.9rem;">Finalizes the report with professional typesetting, embedding diagrams into a locked PDF format.</p>
+                    </div>
+                </div>
+
+                <h3>Key Use Case: The Verified Design Cycle</h3>
+                <p>Imagine a firmware engineer designing a new memory controller protocol. Traditionally, they would write a specification and then manually draw diagrams—a process prone to errors and desynchronization. With <strong>P2P2P</strong>:</p>
+                <ol style="line-height: 1.8;">
+                    <li>The engineer writes the <strong>PlusCal</strong> algorithm in VSCode.</li>
+                    <li>They run the <strong>TLC Model Checker</strong> to verify correctness.</li>
+                    <li>Upon successful verification, they hit <strong>Generate</strong>.</li>
+                    <li>The system instantly produces a <strong>PlantUML sequence diagram</strong> that is guaranteed to match the verified code.</li>
+                    <li>A professional <strong>PDF report</strong> is generated for the architectural review board, ready for archival.</li>
+                </ol>
+
+                <div class="video-gallery" style="display: flex; flex-direction: column; gap: 40px; margin-top: 40px;">
+                    <div class="video-item">
+                        <h3>Project Pitch</h3>
+                        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 15px;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/b-cCgT3E6K0" title="P2P2P Project Pitch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="https://youtu.be/b-cCgT3E6K0" target="_blank" class="cta-button" style="padding: 8px 16px; font-size: 0.8rem; background: #FF0000;">
+                                <span>Watch on YouTube</span>
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="videos/project_pitch.mp4" download class="cta-button" style="padding: 8px 16px; font-size: 0.8rem;">
+                                <span>Download Local Copy</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <h3>Final UGRADS Presentation</h3>
+                        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 15px;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/3ykmIHiTMlc" title="P2P2P UGRADS Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="https://youtu.be/3ykmIHiTMlc" target="_blank" class="cta-button" style="padding: 8px 16px; font-size: 0.8rem; background: #FF0000;">
+                                <span>Watch on YouTube</span>
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="videos/P2P2P_Final_Video.mp4" download class="cta-button" style="padding: 8px 16px; font-size: 0.8rem;">
+                                <span>Download Local Copy</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
