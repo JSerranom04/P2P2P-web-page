@@ -32,16 +32,21 @@ P2P2P-web-page/
 https://github.com/xyloquack/P2P2P
 
 ## Team
-**Juan José Serrano Mora** - Backend Developer  
-📧 Email: jserranom04@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/juan-jos%C3%A9-serrano-mora/
+**Jackson Belzer** - Team Lead  
+📧 Email: jsb536@nau.edu  
+🔗 LinkedIn: [jackson-belzer](https://www.linkedin.com/in/jackson-belzer/)
 
-**Alejandro Benito** - Backend Developer  
-🔗 LinkedIn: https://www.linkedin.com/in/albenito
+**Juan José Serrano Mora** - Architect  
+📧 Email: js5992@nau.edu  
+🔗 LinkedIn: [juan-jose-serrano-mora](https://www.linkedin.com/in/juan-jos%C3%A9-serrano-mora/)
 
-**Christian Lamb** - Backend Developer  
+**Alejandro Benito Marcos** - Release Manager  
+📧 Email: ab5637@nau.edu  
+🔗 LinkedIn: [albenito](https://www.linkedin.com/in/albenito)
+
+**Christian Lamb** - Recorder  
 📧 Email: cjl525@nau.edu  
-🔗 LinkedIn: https://www.linkedin.com/in/christian-lamb-0655a2247
+🔗 LinkedIn: [christian-lamb](https://www.linkedin.com/in/christian-lamb-0655a2247)
 
 
 **University**: Northern Arizona University  
